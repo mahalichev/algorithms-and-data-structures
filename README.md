@@ -7,11 +7,11 @@ Brackets analyzer is a program that recursively checks the correctness of the br
 brackets ::= A | bracket brackets
 bracket ::= (B brackets)
 ```
-As a result of the program's execution, for example, when entering an "expression", the following message will be displayed:
+As a result of the program's execution, for example, when entering an <expression>, the following message will be displayed:
 ```
-expression - THIS IS A BRACKETS
+<expression> - THIS IS A BRACKETS
 -or-
-expression - THIS IS NOT A BRACKETS
+<expression> - THIS IS NOT A BRACKETS
 ```
 The program supports command line and file input and provides instructions for its use.
 
@@ -27,6 +27,20 @@ To run the tests use `./a.out test`
 Directory: `./brackets-analyzer`
 
 ## Hierarchical list depth
+The program calculates the maximum depth of a hierarchical list represented as a non-empty bracket sequence. For example, for the sequence "( ( l k ) ( a () e ) )" the maximum depth is 2.
+
+The program supports command line and file input and provides instructions for its use.
+
+To compile and run the program, use the following commands:
+```
+make
+./a.out
+```
+The program supports testing. To run the tests, place the necessary tests in the `Tests/ToCheck` directory, and place the correct answers to these tests in `Tests/Answers`.
+
+To run the tests use `./a.out test`
+
+Directory: `./hlist-depth`
 
 ##
 
